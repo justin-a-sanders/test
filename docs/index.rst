@@ -25,3 +25,13 @@ API
 
 CLI
 ===
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: hicrep
+   :titlesonly:
+
+   self
+   API <API.rst>
+   CLI <CLI.rst>
