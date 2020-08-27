@@ -26,3 +26,13 @@ Hey hey
 CLI
 ===
 Ho ho
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: hicrep
+   :titlesonly:
+
+   self
+   API.rst
+   CLI.rst
