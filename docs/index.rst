@@ -20,11 +20,12 @@ we recommend using pip to install hicrep, which will install missing dependencie
 
 API
 ===
-
+Hey hey
 
 
 CLI
 ===
+Ho ho
 
 .. toctree::
    :hidden:
