@@ -33,5 +33,5 @@ CLI
    :titlesonly:
 
    self
-   API <API.rst>
-   CLI <CLI.rst>
+   API.rst
+   CLI.rst
