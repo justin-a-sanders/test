@@ -10,13 +10,7 @@ This implementation takes a pair of Hi-C data sets in Cooler format (.cool for s
 
 Installation
 ============
-To install hicrep you will need python version 3.7.6 or greater. You can check your current python version with:
-
-.. code-block:: bash
-
-   $ python3 --version
-
-Additionally, hicrep has the following dependencies:
+To install hicrep you will need python version 3.7.6 or greater. Additionally, hicrep has the following dependencies:
 
 - `NumPy <https://numpy.org/>`_
 - `SciPy <https://www.scipy.org/>`_
@@ -67,9 +61,18 @@ hicrep can be run from the command line with:
 
     The binsize you want to use from a .mcool file. Default is -1, meaning that the inputs are .cool files with a single precomputed binsize
 
-.. option:: --h, <H>
+.. option:: --h, <h>
 
-    Used to set the size of the sliding 2D window used for smoothing the contact matrix. Size will be 1 + 2 * H bins.
+    Used to set the size of the sliding 2D window used for smoothing the contact matrix. Size will be 1 + 2 * h bins. We recommend the following values for h based on the resolution of your data:
+```
+Resolution ----- h
+10kb ----- 20
+25kb ----- 10
+40kb ----- 5
+100kb ----- 3
+500kb ----- 1 or 2
+1Mb ----- 0 or 1
+```
 
 .. option:: --dBPMax <DBPMAX>
 
